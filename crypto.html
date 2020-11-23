@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange app</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/screen.css">
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="design/images/Bitcoin.png"
+    />
+</head>
+<body>
+    <div class="c-app">
+    <header class="c-header">
+        <img src="design/images/Bitcoin.png" class="c-header__logo" alt="logo cryptocurrency">
+    </header>
+    <nav class="c-nav">
+        <ul class="c-nav__list">
+            </a><li class="c-nav__list--item"><p class="c-nav__list--item--text">BTC</p><div class="c-nav__list--item--border u-selected"></div></li>
+            <li class="c-nav__list--item"><span class="c-nav__list--item--text">ETH</span><div class="c-nav__list--item--border"></div></li>
+            <li class="c-nav__list--item"><span class="c-nav__list--item--text">TRH</span><div class="c-nav__list--item--border"></div</li>
+        </ul>
+    </nav>
+    <main class="c-main">
+        <div class="c-main__title">
+            <span class="c-main__title--text"></span>
+        </div>
+        <div class="c-main__price">
+            <span class="c-main__price--dollarsign">$</span>
+            <span class="c-main__price--price c-js__price"></span>
+            <img class="c-main__price--pijl" src="design/images/pijl_omlaag_rood.svg" alt="pijl stijging/daling">
+        </div>
+        <div class="c-main__chart-container">
+            <canvas class="c-main__myChart" ></canvas>
+        </div>
+        <ul class="c-main__ul">
+            <li class="c-main__li">
+                <div class="c-main__li--upperlayer"> 
+                    <span class="c-main__li--upperlayer--text c-js__past-hour"></span>
+                    <img class="c-main__li--upperlayer--pijl" src="design/images/pijl_omhoog_groen.svg" alt="pijl stijging/daling">
+                </div>
+                <div class="c-main__li--lowerlayer">past hours</div>
+            </li>
+            <li class="c-main__li">
+                <div class="c-main__li--upperlayer"> 
+                    <span class="c-main__li--upperlayer--text c-js__past-24hours"></span>
+                    <img class="c-main__li--upperlayer--pijl" src="design/images/pijl_omlaag_rood.svg" alt="pijl stijging/daling">
+                </div>
+                <div class="c-main__li--lowerlayer">past 24 hours</div>
+            </li>
+            <li class="c-main__li">
+                <div class="c-main__li--upperlayer"> 
+                    <span class="c-main__li--upperlayer--text c-js__past-7days"></span>
+                    <img class="c-main__li--upperlayer--pijl" src="design/images/pijl_omhoog_groen.svg" alt="pijl stijging/daling">
+                </div>
+                <div class="c-main__li--lowerlayer">past 7 days</div>
+            </li>
+        </ul>
+        <ul class="c-main__ul c-main__ul-border">
+            <li class="c-main__li">
+                <div class="c-main__li--upperlayer"> 
+                    <span class="c-main__li--upperlayer--text c-js__volume"></span>            
+                </div>
+                <div class="c-main__li--lowerlayer">Volume</div>
+            </li>
+            <li class="c-main__li">
+                <div class="c-main__li--upperlayer"> 
+                    <span class="c-main__li--upperlayer--text c-js__price_to_btc"></span>
+                    </div>
+                <div class="c-main__li--lowerlayer">Price to BTC</div>
+            </li>
+            <li class="c-main__li">
+                <div class="c-main__li--upperlayer"> 
+                    <span class="c-main__li--upperlayer--text c-js__marketcap"></span>
+                </div>
+                <div class="c-main__li--lowerlayer">Market cap</div>
+            </li>
+        </ul>
+    </main>
+</div>
+<script src="scripts/script.js"></script>
+</body>
+</html>

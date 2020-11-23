@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Exchange App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="design/images/Bitcoin.png"
+    />
+  </head>
+  <body>
+    <div class="c-container">
+      <div class="c-container__first-cell">
+        <h1 class="c-container__title">Crypto Exchange app</h1>
+        <form class="c-container__form">
+          <label class="c-container__form--label" for="email"
+            >Sign up met uw email voor updates</label
+          >
+          <div class="c-container__form--input-btn">
+            <input
+              class="c-container__form--input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              onkeydown="validation()"
+              required
+            /><br />
+            <input
+              class="c-container__form--button"
+              type="submit"
+              value="subscribe"
+            />
+          </div>
+          <span class="c-container__form--validator"></span>
+        </form>
+      </div>
+      <p class="c-container__paragraaf">
+        <span class="c-container__paragraaf--deel">
+          De crypto exchange is een simpele app waar u belangrijke informatie
+          kan opzoeken over verschillende cryptocoins. Zoals bevoorbeeld de
+          prijs,stijging/daling, volume en nog veel meer...
+        </span>
+        <span class="c-container__paragraaf--deel">
+          In de grafiek kan u ook de verschillende cryptomarkten vinden van elke
+          coin. Op deze manier kan u zien op welke markt uw coin het goedkoopste
+          is.
+        </span>
+      </p>
+      <a class="c-container__button" href="crypto.html"> naar de app</a>
+      <aside class="c-container__aside">
+        <img
+          class="c-container__aside--img"
+          src="design/images/phoneapp.png"
+          alt="app for phone"
+        />
+      </aside>
+    </div>
+    <script src="scripts/validator.js"></script>
+  </body>
+</html>
